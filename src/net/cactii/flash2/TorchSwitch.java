@@ -57,8 +57,6 @@ public class TorchSwitch extends BroadcastReceiver {
             }
         } else if (action.equals(FLASHLIGHT_ON)) {
             i.putExtra("bright", bright);
-            i.putExtra("strobe", strobe);
-            i.putExtra("period", period);
             context.startService(i);
         } else if (action.equals(FLASHLIGHT_OFF)) {
             context.stopService(i);
